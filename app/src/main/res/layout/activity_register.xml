@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LoginActivity"
+    tools:context=".RegisterActivity"
     android:background="@color/DarkGrayMatte">
 
     <ImageButton
@@ -30,9 +30,8 @@
         android:id="@+id/btnSignUp"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:text="@string/register"
+        android:text="@string/login"
         android:layout_alignParentEnd="true"
-        android:onClick="changeToRegisterActivity"
         style="?android:attr/borderlessButtonStyle"
         android:backgroundTint="@android:color/transparent"/>
 
@@ -42,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ivLogo"
-        android:text="@string/login"
+        android:text="@string/register"
         android:textColor="@color/white"
         android:textSize="50dp"
         android:layout_centerInParent="true"/>
@@ -54,16 +53,32 @@
         android:layout_marginTop="100dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:maxLength="15"
+            android:maxLength="30"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputPassword"
+        android:id="@+id/textInputUsername"
         android:layout_below="@id/textInputEmail"
+        style="@style/inputStyle"
+        android:layout_marginTop="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:maxLength="15"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputPassword"
+        android:layout_below="@id/textInputUsername"
         style="@style/inputStyle"
         android:layout_marginTop="30dp"
         app:passwordToggleEnabled="true"
@@ -77,30 +92,18 @@
             android:maxLength="10"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-
-    <EditText
-        android:id="@+id/btnForgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:text="@string/forgotPassword"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/textInputPassword"
-        android:textColor="@color/Yellow"
-        android:textStyle="bold"
-        android:layout_marginLeft="10dp"
-        />
-
     <android.widget.Button
         android:id="@+id/btnContinue"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
         android:text="Continue"
         android:backgroundTint="@color/Yellow"
         android:layout_centerHorizontal="true"
-        android:onClick="loginUser"
         android:background="@drawable/rounded_button"
-        android:layout_below="@id/btnForgotPassword"/>
+        android:onClick="registerUser"
+        android:layout_below="@id/textInputPassword"/>
 
     <View
         android:id="@+id/vLine1"
@@ -150,5 +153,26 @@
         android:text="@string/facebook"
         android:textColor="@color/white">
     </com.google.android.material.button.MaterialButton>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accept"
+        android:layout_below="@id/btSignUpWithFacebook"
+        android:layout_alignLeft="@id/btSignUpWithFacebook"
+        android:layout_marginTop="25dp"/>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terms"
+        android:layout_below="@id/btSignUpWithFacebook"
+        android:layout_toEndOf="@id/textView3"
+        android:layout_marginTop="25dp"/>
+
+
 
 </RelativeLayout>

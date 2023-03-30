@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="inputStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="hintTextColor">@color/LightGrey</item>
+        <item name="android:textColorHint">@color/SlateGray</item>
+        <item name="boxBackgroundColor">#3C3C3C</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+
+    </style>
+
+    <style name="buttonStyle1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="iconTint">@null</item>
+        <item name="iconGravity">textStart</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+
+</resources>

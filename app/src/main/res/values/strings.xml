@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">MyOwnApp</string>
+    <string name="app_name">Kaikips</string>
+    <string name="login">Log in</string>
+    <string name="register">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">E-mail</string>
+    <string name="google">Continue with Google</string>
+    <string name="facebook">Continue with Facebook</string>
+    <string name="forgotPassword"><u>Forgot Password?</u></string>
+    <string name="emptyEmail">It seems that your e-mail is empty...</string>
+    <string name="emptyUsername">It seems that your username is empty...</string>
+    <string name="invalidLogin">Invalid Username or Password!</string>
+    <string name="invalidEmail">Invalid E-mail!</string>
+    <string name="accept"><font color="@color/white">By continuing, you agree to our&#160;</font></string>
+    <string name="terms"><font color="#FFFF00"><u>Terms of Service</u></font></string>
+    <string name="usernameTaken">This username has been taken!</string>
+    <string name="error">There was an error while processing your action. Try again later!</string>
+
 </resources>
